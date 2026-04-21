@@ -23,4 +23,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: atulraj0503/smartmeter-app:latest
+        tags: atul2raj/smartmeter-app:latest
