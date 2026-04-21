@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> BENTEC Smart Meter Portal</title>
+</head>
+<body>
+
+<h1>⚡BENTEC Smart Meter Portal</h1>
+
+<form method="POST">
+<input type="text" name="meter_id" placeholder="Enter Meter ID">
+<button type="submit">Check</button>
+</form>
+
+{% if data %}
+<p>Status: {{ data.status }}</p>
+<p>Units Used: {{ data.units }}</p>
+<p>Bill: ₹{{ data.bill }}</p>
+{% endif %}
+
+<br>
+<a href="/admin">Admin Dashboard</a>
+
+</body>
+</html>
